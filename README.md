@@ -1,29 +1,30 @@
-* 0. Documentação Nest Prisma ORM
+### Criando projeto Nest Backend Prisma ORM e Mysql
+* <b>0.</b> Documentação Nest Prisma ORM
 ``` 
 https://docs.nestjs.com/recipes/prisma
 ```
 
-* 1. Instalando o nestJS como global no computador
+* <b>1.</b> Instalando o nestJS como global no computador
 ```
 npm install -g @nestjs/cli
 ```
 
-* 2. Criando o projeto NestJS
+* <b>2.</b> Criando o projeto NestJS
 ```
 npx nest new project
 ```
 
-* 3. Entrando na pasta do projeto
+* <b>3.</b> Entrando na pasta do projeto
 ```
 cd project
 ```
 
-* 4. Instalando o prisma ORM
+* <b>4.</b> Instalando o prisma ORM
 ```
 npm install prisma --save-dev
 ```
 
-* 5. Iniciando o prisma com ou sem provider de banco
+* <b>5.</b> Iniciando o prisma com ou sem provider de banco
 ```
 npx prisma init
 ```
@@ -32,7 +33,7 @@ npx prisma init
 npx prisma init --datasource-provider mysql
 ```
 
-* 6. Criando model Users
+* <b>6.</b> Criando model Users
 ```
 model User {
     id Int @id @default(autoincrement())
@@ -43,7 +44,7 @@ model User {
 }
 ```
 
-* 7. Realizando nosso primeiro migrate gerando primeira tabela
+* <b>7.</b> Realizando nosso primeiro migrate gerando primeira tabela
 ```
 npx prisma migrate dev
 ```
